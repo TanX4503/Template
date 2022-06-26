@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, aliquid.">
+
+    <title>Form</title>
+    <link rel="icon" href="images/icon.webp" type="image/x-icon">
+
+    <style type="text/css">
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: x-large;
+            color: aliceblue;
+            background-color: black;
+            text-align: center;
+        }
+
+        header {
+            text-align: center;
+            background-color: blueviolet;
+        }
+
+        section,
+        article {
+            border-style: solid;
+        }
+
+        aside {
+            border-style: dashed;
+            color: lightgray
+        }
+
+        footer {
+            font-size: medium;
+            border-style: solid;
+            color: grey
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid white;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            text-align: center;
+            vertical-align: middle;
+            background-color: #00c7c7
+        }
+
+        button {
+            border: none;
+            color: aliceblue;
+            text-align: center;
+            font-size: x-large;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color: red;
+        }
+
+        .name {
+            font-size: larger
+        }
+
+        .highlight {
+            background-color: lightseagreen;
+        }
+
+        input {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        select,
+        textarea{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body background="https://media4.giphy.com/media/FlodpfQUBSp20/200.gif">
+    <header>
+        <h1>FORM #1</h1>
+        <h3>Kindly Fill All Fields</h3>
+        <a href="/"><button onclick="alert('Go to Homepage? You might lose the data you entered.')">HOME</button></a>
+        <p></p>
+    </header>
+
+    <!--Main Content Start-->
+
+    <main>
+        <section>
+            <form action="backend.html" method="POST" enctype="multipart/form-data">
+                <div>
+                    <h3>SIGN UP FOR eNEWSLETTER</h3>
+                </div>
+
+                <div>
+                    <label id="name">Name&nbsp</label>
+                    <input type="text" name="name" id="name" placeholder="Set a Username" required>
+                </div>
+
+                <p></p>
+
+                <div>
+                    <label for="email">Email ID&nbsp</label>
+                    <input type="email" name="email" id="email" placeholder="example@website.com" required>
+                </div>
+
+                <p></p>
+
+                <div>
+                    <label for="date">Date Of Birth&nbsp</label>
+                    <input type="date" name="date" id="date" min="2000-01-01" max="2018d-12-31" required>
+                </div>
+
+                <p></p>
+
+                <div>
+                    <label for="grade">Grade-&nbsp</label>
+                    <input type="number" name="grade" id="grade" min="1" max="12" placeholder="1-12" required>
+                </div>
+
+                <p></p>
+
+                <div>
+                    <b>Gender:</b>
+                    <br>
+                    <input type="radio" name="gender" id="male" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other" value="other" required>
+                    <label for="female">Other</label>
+                </div>
+
+                <p></p>
+
+                <div>
+                    <label for="type">Type-</label>
+                    <select name="type" id="type" required>
+                        <option value="₹80">₹80, Weekly</option>
+                        <option value="₹120">₹350, Monthly</option>
+                    </select>
+                </div>
+
+                <p></p>
+
+                <div>
+                    <label for="payment" style="font-size:22px">Payment Screenshot:</label>
+                    <input type="file" name="payment" id="payment" required>
+                </div>
+
+                <p></p>
+
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Optional Field">
+                </div>
+
+                <p></p>
+
+                <div>
+                    <label for="password">Password&nbsp</label>
+                    <input type="password" name="password" id="password" placeholder="Set A Password" required>
+                </div>
+
+                <p></p>
+
+                <div>
+                    <input type="checkbox" name="confirm" id="confirm" required>
+                    <label for="confirm" style="font-size:large">I agree that the company may see the entered data for the provision of the eNewsletter</label>
+                </div>
+
+                <p></p>
+
+                <div>
+                    <button type="submit" style="background-color: blueviolet">Submit</button>
+                    <button type="reset">&nbspReset&nbsp</button>
+                </div>
+            </form>
+            <p></p>
+            
+            <!--Also, note the form type url, color-->
+            <!--Also form element textarea-->
+
+        </section>
+    </main>
+
+    <!--Main Content End-->
+
+    <br>
+    <footer>
+        <p></p>
+        <div class="name">
+            Made By Tanish Jain
+        </div>
+        For Inquiries: example@gmail.com
+        <br>
+        Socials:
+        <a href="404.html" target="_blank"><img src="images/fb.png" height="17px" width="17px" alt="FB"></a> <a href="404.html" target="_blank"><img src="images/insta.png" height="17px" width="17px" alt="Insta"></a> <a href="404.html" target="_blank"><img src="images/discord.png" height="17px" width="17px" alt="Discord"></a>
+        <p></p>
+    </footer>
+</body>
+
+</html>
